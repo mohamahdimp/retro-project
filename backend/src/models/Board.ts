@@ -2,7 +2,7 @@
 import mongoose, { Schema, Document } from "mongoose";
 
 // Card interface
-export interface ICard extends Document {
+export interface ICard {
   text: string;
   author: string;
   votes: number;
@@ -10,7 +10,7 @@ export interface ICard extends Document {
 }
 
 // Column interface
-export interface IColumn extends Document {
+export interface IColumn {
   title: string;
   cards: ICard[];
 }
